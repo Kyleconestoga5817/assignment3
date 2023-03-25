@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body  {	
+	background-image: url("../images/berry.jpg");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+div#frame {
+	margin: 25px auto;
+	padding: 20px 30px 20px 20px;
+	width: 50%;
+	min-width: 900px;
+	background-color: #ffffff;	
+	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);
+	border: 2px solid #009926;
+	border-radius: 8px;
+	box-shadow: 0px 0px 90px 2px #008020;
+}
+
+p {
+	margin: 20px 0px;
+}
+
+a {
+	color: #008020; 
+}
+
+a:link, a:visited { 
+	text-decoration: none; 
+}
+
+a:hover, a:focus { 
+    text-decoration: underline; 
+}
+
+/* Header */
+header {
+	height: 160px;
+	border-bottom: 2px solid #e8b417;
+}
+	
+header img { 
+	float: left; 
+} 
+
+header div#header-line-1 {
+	font-size: 300%;
+	font-weight: bold;	
+	text-align: right;
+	color: #ecc03b;
+	text-shadow: 2px 2px 2px black;
+}
+
+header div#header-line-2 {
+	font-size: 130%;
+	font-weight: bold;
+	text-align: right;
+	font-style: italic;
+	color: #008020;
+}
+
+/* aside */
+aside {
+	width: 230px;
+	float: left;
+	margin: 30px 10px 0px 0px;
+}
+
+aside div.sidebar-title {
+	font-size: 115%;
+	font-weight: bold;
+	color: #d1a215;
+}
+
+aside ul {
+	margin: 15px 0px 0px 15px;
+}
+
+aside ul li {
+	margin: 15px 0px 0px 0px;
+}
+
+aside ul li a{
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* Main */
+main {
+	margin: 20px 0;
+	padding-left: 20px;
+	float: left;
+	width: 638px;
+	min-height: 600px;
+	border-left: 2px solid #e8b417;
+}
+
+main h1 { 
+	margin: 0;
+	font-size: 200%;
+}
+
+main h1:first-letter { 
+	font-size: 240%;
+}
+
+main h2 {
+	margin: 25px 0px;
+	font-size: 125%;
+}
+
+main h3 {	
+	font-size: 110%;
+}
+
+main ul#product-categories {
+	list-style-type: none;
+}
+
+main ul#product-categories li {
+	margin: 35px 0px;
+}
+
+main ul#product-categories h3 {
+	margin-top: 10px;
+}
+
+main ul#product-categories p{
+	margin-top: 5px;
+}
+
+main ul#product-categories img {
+	border: 2px solid #e8b417;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px 2px #ecc03b;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	margin-top: 2px;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);
+	width: 180px;
+	padding: 1em 0;
+	display: block;
+    text-align: center;    
+    text-decoration: none;  
+	font-weight: bold;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	color: #d1a215;
+}
+
+#nav_menu a.current, #nav_menu a.current:hover, #nav_menu a.current:focus {
+	color: #d1a215;	
+	font-weight: bold;
+}
+
+/*This styles the fieldset so they margin spacing for the top and bottom*/
+fieldset {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*This styles the legend so they have margin spacing on the bottom, 
+	the color is set to grey, the font-weight is bold, and the font-size is 85%*/
+legend {
+	margin-bottom: 10px;
+	color: #A9A9A9;
+	font-weight: bold;
+	font-size: 85%;
+}
+
+/*This styles the label so it is floated to the left and font-size is 90%*/
+label {
+	font-size: 90%;
+	float: left;
+}
+
+/*This styles the select so it has the font-size of 90%*/
+select {
+	font-size: 90%;
+}
+
+/*This styles the input so it has the font-size of 90%*/
+input {
+	font-size: 90%;
+}
+
+/*This styles the radio type input so it has the width set to auto and the margin-left is set to 45px*/
+input[type="radio"] {
+	width: auto;
+	margin-left: 45px;
+}
+
+/*This styles the id Bill_Me so that the radio point will appear beside the text Bill Me*/
+#Bill_Me {
+	float: none;
+}
+
+/*This styles the id Credit_Card so that the radio point will appear beside the text Credit Card*/
+#Credit_Card {
+	float: none;
+}
+
+/*This styles the submit id so that the submit box has the width of 10em*/
+#submit {
+	width: 10em;
+}
+
+/*This styles the reset id so that the reset box has the width of 10em*/
+#reset {
+	width: 10em;
+}
+
+/*This styles the id Expiration_Date so that the month option box has the width of 7em*/
+#Expiration_Date {
+	width: 7em;
+}
+
+/*This styles the id Year so that the year option box has the width of 5em*/
+#Year {
+	width: 5em;
+}
+
+/* Footer */
+footer {
+	clear: left;
+	border-top: 2px solid #e8b417;
+}
+
+footer p {
+	font-size: 80%;
+	text-align: center;
+}

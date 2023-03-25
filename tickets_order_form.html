@@ -1,0 +1,203 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Event Tickets Order Form</title>
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">		
+	</head>
+
+	<body>
+		<div id="frame">
+			<header>
+				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;">
+				<div id="header-line-1">New Year Central</div>
+				<div id="header-line-2">For the child in all of us!</div>
+			</header>
+
+			<!-- navigation starts -->
+			<nav id="nav_menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<aside>
+				<div class="sidebar-title">Products of The Week...</div>
+				<ul>
+					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li>
+					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li>
+					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li>
+				</ul>
+			</aside>
+			
+			<main>
+				<h1>Order Event Tickets</h1>
+				<!-- The form starts here... -->
+				
+				<!--The fieldset element gives the text that it holds a box around it-->
+				<fieldset>
+				
+				<!--The legend gives the fieldset a title called Memeber information-->
+				<legend>Member Information</legend>
+				
+				<!--This is the start of the form element, and I set the action to place_holder.html and the method to post-->
+				<form name="order_form" id="order_form" action="place_holder.html" method="post">
+				
+				<!--This gives the text box for the email some text beside it called E-Mail:-->
+				<label for="E-Mail">E-Mail:</label>
+				
+				<!--This will allow the user to input text and is set to autofocus so the user will start off with that text box-->
+				<input type="text" name="E-Mail" id="E-Mail" autofocus> <br><br> 
+				
+				<!--This gives the text box for the first name some text beside it called First Name:-->
+				<label for="First Name">First Name:</label>
+				
+				<!--This will allow the user to input text-->
+				<input type="text" name="First Name" id="First Name"> <br><br>
+				
+				<!--This gives the text box for the last name some text beside it called Last Name:-->
+				<label for="Last Name">Last Name:</label>
+				
+				<!--This will allow the user to input text-->
+				<input type="text" name="Last Name" id="Last Name"> <br><br>
+				
+				<!--This gives the text box for the address some text beside it called Address:-->
+				<label for="Address">Address:</label>
+				
+				<!--This allows the user to input text-->
+				<input type="text" name="Address" id="Address"> <br><br>
+				
+				<!--This gives the text box for the city some text beside it called City:-->
+				<label for="City">City:</label>
+				
+				<!--This allows the user to input text-->
+				<input type="text" name="City" id="City"> <br><br>
+				
+				<!--This gives the text box for the province some text beside it called Province:-->
+				<label for="Province">Province:</label>
+				
+				<!--This gives the text box the requirement to have only letters and no less than 2 characters allowed-->
+				<input type="text" name="Province" id="Province" pattern="[A-Za-z]{2}" title="2-letter code" placeholder="2-character code"> <br><br>
+				
+				<!--This gives the text box for the address some text beside it called Address:-->
+				<label for="Postal Code">Postal Code:</label>
+				
+				<!--This gives the text box the requirement to only have 6 characters, letters and numbers, allowed-->
+				<input type="text" name="Postal Code" id="Postal Code" pattern="[A-Za-z0-9]{6}" title="6 characters" placeholder="6 characters"> <br><br>
+				
+				<!--This gives the text box for the phone number some text beside it called Phone Number:-->
+				<label for="Phone Number">Phone Number:</label>
+				
+				<!--This gives the text box the requirement of have a certain amount of digits needed for the phone number 
+					and the placeholder gives the textbox temporary text called 999-999-9999-->
+				<input type="text" name="Phone Number" id="Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="999-999-9999" placeholder="999-999-9999"> <br><br>
+				</fieldset>
+				
+				<fieldset>
+				
+				<!--The legend gives the fieldset the title Ordering Information-->
+				<legend>Ordering Information</legend>
+				<label for="Event">Event:</label>
+				<select name="Event" id="Event">
+					<option value="Cookie Decoration Contest" selected>Cookie Decoration Contest</option>
+					<option value="Tree Decoration Contest">Tree Decoration Contest</option>
+					<option value="Gift of Light Ride-Along">Gift of Light Ride-Along</option>
+					<option value="Breakfast with Santa">Breakfast with Santa</option>
+				
+				</select> <br><br>
+				
+				
+				<label for="Order Type">Order Type:</label>
+				<select name="Order Type" id="Order Type">
+					<option value="Member Package" selected>Member Package</option>
+					<option value="Donor Package">Donor Package</option>
+					<option value="Single Tickets">Single Tickets</option>
+				
+				</select> <br><br>
+				
+				<label for="Number of Tickets">Number of Tickets:</label>
+				<input type="text" name="Number of Tickets" id="Number of Tickets" pattern="[0-9]" title="Must be a number" placeholder="Number of single tickets">
+				</fieldset>
+				
+				<fieldset>
+				
+				<!--The legend gives the fieldset a title called Payment Method-->
+				<legend>Payment Method</legend>
+				<input type="radio" name="Payment Method" id="Bill_Me" value="Bill Me"> Bill Me 
+				<input type="radio" name="Payment Method" id="Credit_Card" value="Credit Card"> Credit Card <br><br>
+				</fieldset>
+				
+				
+				<fieldset>
+				
+				<!--The legend will give the fieldset a title called Credit Card Information-->
+				<legend>Credit Card Information</legend>
+				<label for="Card Type">Card Type:</label>
+				<select name="Card Type" id="Card Type">
+					<option value="Visa" selected>Visa</option>
+					<option value="Master Card">Master Card</option>
+					<option value="Discover">Discover</option>
+				
+				</select> <br><br>
+				
+				<label for="Card Number">Card Number:</label>
+				
+				<!--This gives the text box the requirements of having 16 digits allowed to enter-->
+				<input type="text" name="Card Number" id="Card Number" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" title="16 digits" placeholder="16 digits"> <br><br>
+				
+				<label for="Expiration Date">Expiration Date:</label>
+				
+				<!--This makes the multi-option box have the values of the months in the year-->
+				<select name="Expiration Date" id="Expiration_Date">
+					<option value="January" selected>January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+					
+				</select>
+				
+				<!--This makes the multi-option box have the values of years-->
+				<select name="Year" id="Year">
+					<option value="2021" selected>2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+					<option value="2024">2024</option>
+					<option value="2025">2025</option>
+					<option value="2026">2026</option>
+					<option value="2027">2027</option>
+				
+				</select> <br><br>
+				</fieldset>
+				
+				<fieldset>
+				<!--The legend will give the fieldset a title called Submit Your Order-->
+				<legend>Submit Your Order</legend>
+				
+				<!--These elements make the Submit and Reset Field buttons-->
+				<input type="submit" id="submit" value="Submit">
+				<input type="reset" id="reset" value="Reset Field">
+				</fieldset>
+				
+				</form>
+				
+			</main>
+			
+			<footer>
+				<p>&copy; 2021 New Year Central. Created by Johnny White.</p>
+			</footer>
+		</div>
+	</body>
+</html>
